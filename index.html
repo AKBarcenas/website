@@ -114,7 +114,7 @@
 
           <div class="row">
             <div class="12u">
-              <form method="post" action="#">
+              <form method="post" name="contactform" action="contact-form-handler.php">
                 <div>
                   <div class="row">
                     <div class="6u 12u(mobile)">
@@ -151,6 +151,13 @@
     </div>
 
     <!-- Scripts -->
+    <script language="JavaScript" src="gen_validatorv31.js" type="text/javascript"></script>
+    <script language="JavaScript">
+      var frmvalidator  = new Validator("contactform");
+      frmvalidator.addValidation("name","req","Please provide your name");
+      frmvalidator.addValidation("email","req","Please provide your email");
+      frmvalidator.addValidation("email","email", "Please enter a valid email address");
+    </script>
     <script src="jquery.min.js"></script>
     <script src="jquery.scrolly.min.js"></script>
     <script src="jquery.scrollzer.min.js"></script>
