@@ -2536,3 +2536,12 @@
 				}
 
 	}
+
+	.section  {
+		text-align: left;
+		opacity: .75;
+	}
+
+	.sectionItemsA  {
+		font-weight: bold;
+	}
