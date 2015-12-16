@@ -114,7 +114,7 @@
 
           <div class="row">
             <div class="12u">
-              <form method="post" name="contactform" action="http://formspree.io/akbarcen@ucsd.edu">
+              <form method="post" name="contactform" id="contactform" action="http://formspree.io/akbarcen@ucsd.edu">
                 <div>
                   <div class="row">
                     <div class="6u 12u(mobile)">
@@ -126,7 +126,7 @@
                   </div>
                   <div class="row">
                     <div class="12u">
-                       <input type="text" name="subject" id="subject" placeholder="Subject" required/>
+                       <input type="text" name="subject" id="subject" placeholder="Subject" rows="10"/>
                     </div>
                   </div>
                   <div class="row">
@@ -157,6 +157,8 @@
       frmvalidator.addValidation("name","req","Please provide your name");
       frmvalidator.addValidation("email","req","Please provide your email");
       frmvalidator.addValidation("email","email", "Please enter a valid email address");
+      frmvalidator.addValidation("subject", "req", "Please enter in a subject");
+      frmvalidator.addValidation("message", "req", "Please enter in a message");
     </script>
     <script src="jquery.min.js"></script>
     <script src="jquery.scrolly.min.js"></script>
